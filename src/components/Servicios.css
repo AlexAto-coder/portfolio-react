@@ -1,0 +1,75 @@
+.servicios {
+    padding: 100px 0;
+    background: #0f172a;
+    color: #ffffff;
+}
+
+.servicios-contenido {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+
+.servicios .seccion-etiqueta {
+    margin: 0 0 10px;
+    color: #22c55e;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.servicios h2 {
+    margin: 0 0 15px;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.servicios .seccion-descripcion {
+    margin: 0 0 45px;
+    color: #cbd5e1;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.servicio-card {
+    padding: 30px;
+    background: #172033;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.servicio-card:hover {
+    transform: translateY(-5px);
+    border-color: #22c55e;
+}
+
+.servicio-card h3 {
+    margin: 0 0 15px;
+    font-size: 1.35rem;
+}
+
+.servicio-card p {
+    margin: 0;
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+    .servicios {
+        padding: 80px 0;
+    }
+
+    .servicios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .servicio-card {
+        padding: 25px;
+    }
+}

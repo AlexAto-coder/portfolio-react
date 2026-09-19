@@ -34,7 +34,7 @@ function Hero() {
 }, []);
 
   return (
-    <section className="hero">
+    <section id="inicio" className="hero">
 
   <div className="hero-contenido">
 
